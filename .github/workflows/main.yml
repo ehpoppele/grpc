@@ -4,7 +4,6 @@ on: [push]
 
 jobs:
   build:
-    if: github.actor == 'premist'
     runs-on: [self-hosted, macOS-arm64]
     steps:
       - uses: actions/checkout@v2
